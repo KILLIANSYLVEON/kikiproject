@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Test cour css</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- u commentaire pas trep utile -->
+	<div id="block">
+		bla bla bla
+	</div>
+
+	<h2>titre pour les test</h2>
+
+
+	<div>
+		un autre div
+	</div>
+
+	<p class="modif">bla bla bla sa va bien oui et toi comment va tu en ce jour de vendredit bien car tout est permis le vendredi hahah j'ai la ref en effect vendredi tout est permiset oui</p>
+
+
+
+	<div>
+		<figure>
+			<img src="imageeloi.jpg" alt="">
+			<figcaption>la photo youtube de legoeloi</figcaption>
+		</figure>
+	</div>
+
+
+
+	<div>
+
+	        <ul>
+		        <li>le premier element</li>
+		        <li>le second element</li>
+		        <li>un 3eme element</li>
+		        <li>un dernier element</li>
+	        </ul>
+	    </div>
+
+	    <div>
+
+	        <ol class="te">
+		        <li>premier</li>
+		        <li>encore un</li>
+		        <li>un autre</li>
+		        <li>le 4eme</li>
+		        <li>le dernier</li>
+	        </ol>
+	    </div>
+	    <div>
+
+
+	<p class="test">Lorem ipsum dolor sit amet<span class="rouge"> consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<h2>Heure de Tokyo</h2>
+  	<p id="heureTokyo"></p>
+  	
+  	<button>CLIQUER LA MAINTENANT</button>
+
+  	<script>
+    	function afficherHeureTokyo() {
+      	// Fuseau horaire de Tokyo
+      	const tokyoTimeZone = 'Asia/Tokyo';
+
+      	// Obtenir l'heure actuelle
+      	const date = new Date();
+
+      	// Options pour l'affichage de la date et de l'heure
+      	const options = {
+        	timeZone: tokyoTimeZone,
+        	hour12: false, // Affichage en format 24 heures
+        	hour: 'numeric',
+        	minute: 'numeric',
+        	second: 'numeric'
+      	};
+
+      	// Formatter la date et l'heure
+      	const formattedTime = date.toLocaleTimeString('en-US', options);
+
+      	// Afficher l'heure de Tokyo sur la page web
+      	document.getElementById('heureTokyo').textContent = formattedTime;
+    	}
+
+    	// Appeler la fonction une première fois pour afficher l'heure immédiatement
+    	afficherHeureTokyo();
+
+    	// Rafraîchir l'heure de Tokyo toutes les secondes
+    	setInterval(afficherHeureTokyo, 1000);
+  	</script>
+
+	<p class="ali">petit text por tester comme d'hab</p>
+
+	<h2>cour javascript</h2>
+
+	<footer>
+		<p>bla bla je suis un footer</p>
+	</footer>
+	
+    <script src="script.js"></script>
+
+</body>
+</html>
