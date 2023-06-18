@@ -1,0 +1,23 @@
+body{background-color: #DDD; margin: auto; width: 500px;}
+div#block{background-color: #fff; border: 2px solid #000; border-radius: 8px;}
+span.rouge{color: red;}
+p.modif{font-family:papyrus; sans-serif; font-variant:small-caps;
+font-weight:bold;
+font-size:50px; line-heigth:50px;
+}
+
+p.test{
+	text-decoration:underline; text-shadow:2px 2px 5px #bb2b2d; text-transform:uppercase; text-indent:50px; word-spacing:20px;
+}
+
+
+p.ali{
+	text-align:right; letter-spacing:30px;
+}
+
+
+p.ali{
+	color:#FFFF00;
+}
+
+ol.te{list-style-type:hiragana-iroha;}
